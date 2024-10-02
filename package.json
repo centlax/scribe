@@ -4,6 +4,7 @@
 	"packageManager": "pnpm@9.11.0",
 	"scripts": {
 		"dev": "vite dev",
+		"play": "pnpm --filter playground --",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
@@ -35,16 +36,11 @@
 		"svelte": "^5.0.0-next.1"
 	},
 	"devDependencies": {
-		"@melt-ui/pp": "^0.3.2",
-		"@melt-ui/svelte": "^0.83.0",
 		"@playwright/test": "^1.28.1",
-		"@shikijs/markdown-it": "^1.21.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
-		"@tailwindcss/typography": "^0.5.15",
-		"@types/dompurify": "^3.0.5",
 		"@types/eslint": "^9.6.0",
 		"@types/markdown-it": "^14.1.2",
 		"autoprefixer": "^10.4.20",
@@ -53,15 +49,12 @@
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
 		"magic-string": "^0.30.11",
-		"marked": "^14.1.2",
-		"postcss": "^8.4.47",
+		"markdown-it": "^14.1.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"publint": "^0.2.0",
-		"shiki": "^1.21.0",
 		"svelte": "^5.0.0-next.1",
 		"svelte-check": "^4.0.0",
-		"tailwindcss": "^3.4.13",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^5.0.11",
@@ -86,9 +79,5 @@
 				}
 			}
 		]
-	},
-	"dependencies": {
-		"dompurify": "^3.1.7",
-		"markdown-it": "^14.1.0"
 	}
 }

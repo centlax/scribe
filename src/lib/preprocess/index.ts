@@ -9,7 +9,7 @@ export function preprocessScribe() {
 		 * @param {string} options.content
 		 * @param {string} options.filename
 		 */
-		markup: async ({ content, filename }) => {
+		markup: async ({ content, filename }: { content: string; filename: string; }) => {
 			const md = markdownit()
 			const markupString = new MagicString(content);
 
